@@ -1,0 +1,17 @@
+health: 4000
+size: 3
+itemCapacity: 3000
+unitCapModifier: 8
+unitType: alpha
+incinerateNonBuildable: false
+isFirstTier: true
+buildVisibility: sandboxOnly
+requirements: [
+    bloodinum/2000
+    demisite/1000
+    nullyte/1000
+    winding/500
+]
+category: effect
+research: symbol
+researchCostMultiplier: 0.01

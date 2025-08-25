@@ -1,0 +1,171 @@
+type: mech
+outlineColor: 232323
+speed: 0.4
+flying: false
+research: {
+    parent: bomb
+    objectives: [
+        {
+            type: SectorComplete
+            preset: occurrence
+        }
+    ]
+}
+hitSize: 17
+itemCapacity: 0
+targetAir: true
+targetGround: true
+outlineRadius: 3
+drownTimeMultiplier: 12
+omniMovement: false
+rotateSpeed: 2.8
+health: 1760
+armor: 20
+outlines: false
+deathExplosionEffect: none
+treadRects: [
+    {
+        x: -29
+        y: -25
+        width: 7
+        height: 51
+    }
+]
+weapons: [
+{ 
+name: afterDeath
+    
+    shootY: 0
+    shootX: 0
+    x: 0
+    y: 0
+    layerOffset: -0.01
+    mirror: false
+    shootCone: 360
+    recoil: 0
+    reload: 40
+    shootSound: explosion
+    shootOnDeath: true
+    controllable: false
+    rotate: true
+    noAttack: true
+
+    bullet: {
+    type: ArtilleryBulletType
+    speed: 7
+    sprite: nihil-turret-weapon
+    spin: 5
+    homingPower: 0.1
+    homingRange: 40
+    lifetime: 15
+    trailEffect: none
+    ammoMultiplier: 1
+    reloadMultiplier: 1
+    splashDamageRadius: 40
+    splashDamage: 100
+    width: 30
+    height: 30
+    shrinkX: 0.5
+    shrinkY: 0.5
+    smokeEffect: none
+    shootEffect:[
+        {
+            type: ExplosionEffect 
+            waveColor: 232323
+            sparkColor: 979797
+            smokeColor: 232323
+            waveRad: 35
+            waveStroke: 2.5
+            sparks: 12
+            sparkLen: 2.5
+            sparkRad: 35
+            sparkStroke: 1
+            smokes: 8
+            smokeSizeBase: 0
+            smokeSize: 5
+            smokeRad: 28
+            lifetime: 70
+        }
+    ]
+    }
+}
+{ 
+name: turret-weapon
+    
+    shootY: 5.5
+    shootX: 0
+    x: 0
+    y: 0
+    rotate: true
+    rotateSpeed: 2.5
+    layerOffset: 0.01
+    mirror: false
+    shootCone: 80
+    recoil: 2
+    reload: 65
+    shootSound: cannon
+    
+
+    bullet: {
+        type: BasicBulletType
+        damage: 70
+        lifetime: 20
+        pierceCap: 2
+        pierceBuilding: true
+        width: 7
+        height: 14
+        speed: 8
+        backColor: 565656 
+        frontColor: 979797
+        trailColor: 565656 
+        trailWidth: 1.75
+        trailLength: 10
+        despawnHit: true
+        shootEffect: [
+            {
+                type: WaveEffect
+                colorFrom: 979797
+                colorTo: 23232300
+                sizeFrom: 0
+                sizeTo: 12
+                strokeFrom: 2
+                strokeTo: 0
+                lifetime: 35
+            }
+            {
+                type: ParticleEffect 
+                colorFrom: 979797
+                colorTo: 00000000
+                particles: 12
+                cone: 30
+                length: 70
+                baseLength: 0
+                lightScl: 2
+                lightOpacity: 2
+                lifetime: 20
+                spin: 0
+                sizeFrom: 1.5
+                sizeTo: 0 
+                offset: 0
+            }
+        ]
+        despawnEffect: none
+        hitEffect:[{
+            type: ParticleEffect 
+            colorFrom: 979797
+            colorTo: 00000000
+            particles: 8
+            cone: 50
+            length: 45
+            baseLength: 0
+            lightScl: 3
+            lightOpacity: 2
+            lifetime: 30
+            spin: 0
+            sizeFrom: 2
+            sizeTo: 0 
+            offset: 0
+        }]
+    }
+}
+]

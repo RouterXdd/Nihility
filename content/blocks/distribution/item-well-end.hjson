@@ -1,0 +1,12 @@
+range: 1
+
+solid: false
+category: distribution
+requirements: [
+	bloodinum/3
+    demisite/2
+    suffelin/2
+]
+
+research: item-well
+researchCostMultiplier: 0.1

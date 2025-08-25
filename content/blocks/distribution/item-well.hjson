@@ -1,0 +1,14 @@
+range: 2
+
+solid: false
+category: distribution
+requirements: [
+	bloodinum/1
+    demisite/1
+]
+
+research: core-justice
+researchCost: [
+	bloodinum/10
+    demisite/10
+]

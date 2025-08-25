@@ -1,0 +1,55 @@
+size: 2
+itemCapacity: 10
+craftTime: 90
+consumes: {
+  items:[
+    nullyte/2
+  ]
+  liquids:[
+    blood/5
+  ]
+}
+outputItems: [
+  zero-alloy/2
+]
+craftEffect: [
+    {
+        type: ParticleEffect
+        particles: 10
+        cone: 360
+        lifetime: 45
+        length: 50
+        sizeFrom: 5
+        colorFrom: f6dbf4
+        colorTo: ac85b100
+    }
+]
+drawer: {
+   type: DrawMulti
+    drawers: [
+    {
+    type: DrawDefault
+    }
+    {
+    type: DrawFlame
+    flameColor: f6dbf4
+    }
+  ]
+}
+researchCostMultiplier: 0.35
+category: crafting
+requirements: [
+  demisite/140
+  bloodinum/90
+  nullyte/75
+  suffelin/110
+]
+research: {
+    parent: nuller
+    objectives: [
+        {
+            type: SectorComplete
+            preset: occurrence
+        }
+    ]
+}

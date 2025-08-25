@@ -1,0 +1,10 @@
+health: 1400
+size: 2
+research: nullyte-wall
+category: defense
+requirements: [
+    nullyte/32
+]
+researchCost: [
+	nullyte/500
+]

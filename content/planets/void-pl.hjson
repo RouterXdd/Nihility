@@ -1,0 +1,44 @@
+generator: SerpuloPlanetGenerator
+
+clearSectorOnLose: true
+allowLaunchSchematics: false
+allowLaunchLoadout: false
+allowWaveSimulation: false
+prebuildBase: true
+parent: sun
+radius: 1
+sectorSize: 3
+startSector: 14
+atmosphereColor: 00000000  
+iconColor: 1e1e1e 
+orbitRadius: 45   
+orbitTime: 176
+bloom: false
+alwaysUnlocked: true
+accessible: true
+visible: true
+allowLaunchToNumbered: false    
+allowWaves: true
+updateLighting: false
+defaultCore: core-justice
+allowCampaignRules: false
+mesh: [
+ {
+    type: NoiseMesh
+	bloom: true
+    color1: 000000
+    color2: 000000
+    divisions: 6
+    radius: 0.85
+    octaves: 7.8
+    persistence: 0.5
+	coct: 1.5
+    cper: 2
+    scl: 0.5
+    mag: 1
+ }
+]
+
+//bloom: false
+alwaysUnlocked: true
+research: core-justice

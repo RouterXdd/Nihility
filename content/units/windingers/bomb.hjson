@@ -1,0 +1,75 @@
+type: mech
+outlineColor: 232323
+speed: 0.65
+flying: false
+research: {
+    parent: symbol
+    objectives: [
+        {
+            type: SectorComplete
+            preset: nowhere
+        }
+    ]
+}
+hitSize: 10
+itemCapacity: 0
+targetAir: true
+targetGround: true
+mechLegColor: 232323
+mechFrontSway: 0.7
+mechStepParticles: true
+stepShake: 1
+outlineRadius: 3
+drownTimeMultiplier: 8
+rotateSpeed: 3
+health: 190
+armor: 10
+deathExplosionEffect: none
+
+weapons: [
+{ 
+name: bomb-expl
+    
+    shootY: 0
+    shootX: 0
+    x: 0
+    y: 0
+    layerOffset: -0.01
+    mirror: false
+    rotate: false
+    shootCone: 180
+    rotationLimit: 0
+    recoil: 0
+    reload: 85
+    shootSound: explosion
+    shootOnDeath: true
+
+    bullet: {
+    type: ExplosionBulletType
+    splashDamage: 40
+    splashDamageRadius: 40
+    splashDamagePierce: true
+
+shootEffect: {
+    type: MultiEffect
+    effects: [{
+        type: ParticleEffect 
+        colorFrom: ffffff
+        colorTo: 00000000
+        particles: 1
+        cone: 360
+        region: circle
+        length: 0
+        baseLength: 0
+        lightScl: 3
+        lightOpacity: 2
+        spin: 0
+        sizeFrom: 40
+        sizeTo: 40
+        offset: 0
+        }
+]
+}
+}
+}
+]

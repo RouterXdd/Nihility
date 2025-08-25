@@ -1,0 +1,143 @@
+health: 1470
+armor: 20
+speed: 0.55
+drag: 0.18
+outlineColor: 080409
+hitSize: 17
+rotateSpeed: 2.65
+legStraightness: 0.4
+stepShake: 0
+legCount: 4
+legLength: 18
+lockLegBase: true
+legContinuousMove: true
+legExtension: -3
+legBaseOffset: 4
+legMaxLength: 1.2
+legMinLength: 0.2
+legLengthScl: 0.96
+legForwardScl: 1.1
+legGroupSize: 3
+rippleScale: 0.2
+
+legMoveSpace: 1
+allowLegStep: true
+hovering: true
+shadowElevation: 0.1
+groundLayer: 74
+
+weapons: [
+{
+name: glaive-weapon
+x: 0
+y: 0
+mirror: false
+top: false
+shootY: 8
+layerOffset: 0.0001
+rotate: true
+rotateSpeed: 2.5
+shootCone: 20
+reload: 220
+recoil: 0
+shootSound: laser
+parts: [
+        {
+            type: RegionPart
+            mirror: false
+            layerOffset: -0.00001
+            moveY: 10
+            suffix: -spear
+            progress: recoil
+            outline: false
+        }
+]
+    bullet: {
+        type: ShrapnelBulletType
+        lifetime: 5
+        damage: 50
+        length: 25
+        width: 4
+        hitSize: 4
+        fromColor: 00000000
+        toColor: 00000000
+        despawnEffect: none
+        smokeEffect: none
+        status: bloodshred
+        statusDuration: 130
+        hitEffect: [
+        {
+            type: RadialEffect
+            amount: 2
+            rotationSpacing: 180
+            effectRotationOffset: 90
+            effect: {
+                type: ParticleEffect
+                particles: 4
+                cone: 18
+                line: true
+                lifetime: 38
+                length: 55
+                lenFrom: 3
+                lenTo: 0
+                strokeFrom: 0.75
+                strokeTo: 0
+                colorFrom: 451225
+                colorTo: 32071900
+            }
+        }
+      ]
+    shootEffect: {
+        type: MultiEffect
+        effects: [
+            {
+                type: ParticleEffect
+                particles: 5
+                cone: 30
+                line: true
+                lifetime: 55
+                length: 52
+                lenFrom: 3.5
+                lenTo: 0
+                strokeFrom: 1
+                strokeTo: 0
+                colorFrom: 671d20
+                colorTo: 32071900
+            }
+            {
+                type: ParticleEffect
+                particles: 8
+                cone: 30
+                line: true
+                lifetime: 50
+                length: 45
+                lenFrom: 4
+                lenTo: 0
+                strokeFrom: 1
+                strokeTo: 0
+                colorFrom: 451225
+                colorTo: 32071900
+            }
+            
+        ]
+    }
+    }
+}
+ ] 
+
+research: {
+    parent: prospect
+    requirements: [
+        bloodinum/1500
+        nullyte/865
+        zero-alloy/380
+        suffering-metal/300
+    ]
+    objectives: [
+        zero-alloy
+        {
+            type: SectorComplete
+            preset: occurrence
+        }
+    ]
+}

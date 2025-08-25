@@ -1,0 +1,11 @@
+category: distribution
+research: item-well
+configurable: false
+requirements: [
+    bloodinum/5
+    demisite/5
+]
+researchCost: [
+	bloodinum/120
+    demisite/120
+]

@@ -1,0 +1,160 @@
+type: mech
+outlineColor: 232323
+speed: 0.58
+flying: false
+research: {
+    parent: symbol
+    objectives: [
+        {
+            type: SectorComplete
+            preset: occurrence
+        }
+    ]
+}
+hitSize: 19
+itemCapacity: 0
+targetAir: true
+targetGround: true
+mechLegColor: 232323
+mechFrontSway: 0.35
+mechStepParticles: true
+stepShake: 0.4
+outlineRadius: 3
+drownTimeMultiplier: 108
+rotateSpeed: 2.35
+health: 765
+armor: 0
+
+weapons: [
+{ 
+name: letter-weapon
+    
+    shootY: 0
+    shootX: 0
+    x: 0
+    y: 0
+    layerOffset: -0.01
+    mirror: false
+    rotate: false
+    shootCone: 22
+    rotationLimit: 0
+    recoil: 0
+    reload: 90
+    inaccuracy: 0
+    shootSound: blaster
+    shoot: {
+        firstShotDelay: 30
+        shots: 5
+        shotDelay: 2
+    }
+    parts: [
+        {
+            type: FlarePart
+            radius: 0
+            radiusTo: 14
+            stroke: 2
+            color1: 0c0c1a
+            spinSpeed: -3.2
+            followRotation: false
+            progress: {
+                type: charge
+                interp: pow5In
+            }
+        }
+        {
+            type: FlarePart
+            radius: 0
+            radiusTo: 14
+            stroke: 2
+            color1: 273145
+            spinSpeed: 3.2
+            followRotation: false
+            progress: {
+                type: charge
+                interp: pow5In
+            }
+        }
+    ]
+
+    bullet: {
+        type: BasicBulletType
+        damage: 0
+        lifetime: 40
+        width: 0
+        height: 0
+        speed: 1
+        shootEffect: none
+        smokeEffect: none
+        hitEffect: none
+        despawnEffect: none
+        keepVelocity: false
+        recoil: 2.5
+        spawnBullets: [
+            {
+            type: BasicBulletType
+            damage: 0
+            lifetime: 0
+            width: 0
+            height: 0
+            speed: 0
+            shootEffect: none
+            smokeEffect: none
+            hitEffect: none
+            despawnEffect: none
+            keepVelocity: false
+            fragBullets: 3
+            fragVelocityMin: 1
+            fragRandomSpread: 30
+            fragBullet:{
+                type: BasicBulletType
+                damage: 20
+                lifetime: 15
+                width: 5
+                height: 10
+                speed: 4
+                drag: -0.01
+                backColor: 565656 
+                frontColor: 979797
+                trailColor: 565656 
+                trailWidth: 1.2
+                trailLength: 8
+                hitEffect:{
+                    type: ParticleEffect 
+                    colorFrom: 979797
+                    colorTo: 00000000
+                    particles: 8
+                    cone: 50
+                    length: 45
+                    baseLength: 0
+                    lightScl: 3
+                    lightOpacity: 2
+                    lifetime: 30
+                    spin: 0
+                    sizeFrom: 2
+                    sizeTo: 0 
+                    offset: 0
+                }
+                despawnEffect:{
+                    type: ParticleEffect 
+                    colorFrom: 979797
+                    colorTo: 00000000
+                    particles: 8
+                    cone: 50
+                    length: 45
+                    baseLength: 0
+                    lightScl: 3
+                    lightOpacity: 2
+                    lifetime: 30
+                    spin: 0
+                    sizeFrom: 2
+                    sizeTo: 0 
+                    offset: 0
+                } 
+            }
+            }
+        ]
+        
+        
+    }
+}
+]

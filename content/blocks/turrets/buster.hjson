@@ -1,0 +1,207 @@
+health: 755
+size: 3
+reload: 165
+range: 270
+outlineColor: "080409"
+shootY: 1
+ammoTypes:{
+    nullyte:{
+        type: BasicBulletType
+        speed: 4
+        lifetime: 67.5
+        damage: 30
+        splashDamage: 150
+        splashDamageRadius: 36
+        homingPower: 0.1
+        homingDelay: 12
+        width: 24
+        height: 24
+        hitSize: 20
+        sprite: nihil-bust-line
+        backColor: 4a1252 
+        frontColor: 4a1252
+        trailEffect: [
+            {
+                type: ParticleEffect
+                particles: 1
+                cone: 0
+                lifetime: 40
+                length: 1
+                region: nihil-bust-line
+                interp: pow3In
+                sizeFrom: 7
+                sizeTo: 0
+                colorFrom: 4a1252
+                colorTo: c2549400
+                baseRotation: -90
+            }
+        ]
+        trailInterval: 2
+        trailRotation: true
+        ammoMultiplier: 2
+        buildingDamageMultiplier: 0.2
+        despawnHit: true
+        hitEffect: [
+            {
+                type: ParticleEffect 
+                colorFrom: 230627
+                colorTo: 6c186400
+                particles: 15
+                cone: 360
+                length: 35
+                baseLength: 0
+                lightScl: 3
+                lightOpacity: 2
+                lifetime: 25
+                spin: 0
+                sizeFrom: 2.5
+                sizeTo: 0 
+                offset: 0
+                interp: smooth
+            }
+            {
+                type: ParticleEffect 
+                colorFrom: 4a1252
+                colorTo: 82256b00
+                particles: 8
+                cone: 50
+                length: 60
+                baseLength: 0
+                lightScl: 3
+                lightOpacity: 2
+                lifetime: 30
+                spin: 0
+                sizeFrom: 3
+                sizeTo: 0 
+                offset: 0
+                interp: smooth
+            }
+            {
+                type: WaveEffect 
+                colorFrom: 230627
+                colorTo: 6c186400
+                sides: 8
+                lightScl: 3
+                lightOpacity: 2
+                lifetime: 30
+                sizeFrom: 0
+                sizeTo: 36
+                offset: 0
+                interp: smooth
+            }
+        ]
+        despawnEffect: none
+    }
+    suffering-metal:{
+        type: BasicBulletType
+        speed: 4
+        lifetime: 67.5
+        damage: 95
+        splashDamage: 245
+        splashDamageRadius: 50
+        reloadMultiplier: 0.7
+        homingPower: 0.1
+        homingDelay: 12
+        width: 32
+        height: 32
+        hitSize: 28.5
+        sprite: nihil-bust-line
+        backColor: c21b1b 
+        frontColor: c21b1b
+        trailEffect: [
+            {
+                type: ParticleEffect
+                particles: 1
+                cone: 0
+                lifetime: 40
+                length: 1
+                region: nihil-bust-line
+                interp: pow3In
+                sizeFrom: 9
+                sizeTo: 0
+                colorFrom: c21b1b
+                colorTo: c2549400
+                baseRotation: -90
+            }
+        ]
+        trailInterval: 3.5
+        trailRotation: true
+        ammoMultiplier: 2
+        buildingDamageMultiplier: 0.2
+        despawnHit: true
+        hitEffect: [
+            {
+                type: ParticleEffect 
+                colorFrom: a90f1a
+                colorTo: 70041d00
+                particles: 15
+                cone: 360
+                length: 48
+                baseLength: 0
+                lightScl: 3
+                lightOpacity: 2
+                lifetime: 25
+                spin: 0
+                sizeFrom: 2.5
+                sizeTo: 0 
+                offset: 0
+                interp: smooth
+            }
+            {
+                type: ParticleEffect 
+                colorFrom: c21b1b
+                colorTo: 70041d00
+                particles: 8
+                cone: 50
+                length: 75
+                baseLength: 0
+                lightScl: 3
+                lightOpacity: 2
+                lifetime: 30
+                spin: 0
+                sizeFrom: 3
+                sizeTo: 0 
+                offset: 0
+                interp: smooth
+            }
+            {
+                type: WaveEffect 
+                colorFrom: c21b1b
+                colorTo: 70041d00
+                sides: 8
+                lightScl: 3
+                lightOpacity: 2
+                lifetime: 30
+                sizeFrom: 0
+                sizeTo: 50
+                offset: 0
+                interp: smooth
+            }
+        ]
+        despawnEffect: none
+    }
+}
+drawer:{
+ type: DrawTurret
+ basePrefix: souled-
+    parts: [
+    {
+        type: RegionPart
+        suffix: "-cap"
+        mirror: false
+        progress: recoil
+        under: true
+        moveY:-4
+        x: 0
+    }
+    ]
+}
+category: turret
+research: revolt
+researchCostMultiplier: 0.3
+requirements: [
+    bloodinum/175
+    suffering-metal/120
+    zero-alloy/160
+    suffelin/200
+]

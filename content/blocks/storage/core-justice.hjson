@@ -1,0 +1,20 @@
+health: 4000
+size: 3
+itemCapacity: 3000
+unitCapModifier: 3
+unitType: clover
+incinerateNonBuildable: false
+isFirstTier: true
+requirements: [
+    bloodinum/1300
+    demisite/850
+    nullyte/500
+]
+category: effect
+research: {
+  root: true
+  name: void
+  planet: void-pl
+  requiresUnlock: false
+}
+alwaysUnlocked: true

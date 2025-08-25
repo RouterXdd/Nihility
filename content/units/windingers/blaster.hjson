@@ -1,0 +1,81 @@
+type: flying
+lowAltitude: false
+speed: 1.8
+accel: 0.065
+drag: 0.1
+flying: true
+health: 270
+hitSize: 12
+armor: 0
+itemCapacity: 10
+outlineColor: 232323
+engineOffset: 4.5
+faceTarget: true
+weapons: [
+{
+name: blaster-weapon
+x: 0
+y: 0
+mirror: false
+top: false
+layerOffset: -0.00001
+rotate: false
+shootCone: 35
+reload: 170
+cooldownTime: 210
+continuous: ture
+    shootSound: laser
+    bullet: {
+        type: ContinuousLaserBulletType
+        lifetime: 25
+        damage: 25
+        length: 75
+        width: 3.5
+        hitSize: 4
+        colors: [8a8a8a, b6b6b6, d8d8d8]
+        pierceCap: 3
+        pierceBuilding: true
+        despawnEffect: none
+        hitEffect: [
+        {
+            type: ParticleEffect
+            particles: 4
+            cone: 45
+            line: true
+            lifetime: 34
+            length: 40
+            lenFrom: 3.5
+            lenTo: 0
+            strokeFrom: 1
+            strokeTo: 0
+            colorFrom: b6b6b6
+            colorTo: 8a8a8a00
+        }
+      ]
+    shootEffect: none
+    }
+    parts: [
+        {
+			suffix: -wing
+			mirror: true
+			under: true
+			progress: recoil
+            layerOffset: -0.001
+			moveRot: -20
+			moveY: 1
+			moveX: 0
+			x: 0
+			y: 0
+		}
+    ]
+}
+ ] 
+research: {
+    parent: symbol
+    objectives: [
+        {
+            type: SectorComplete
+            preset: nowhere
+        }
+    ]
+}

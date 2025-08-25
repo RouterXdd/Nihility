@@ -1,0 +1,10 @@
+health: 1680
+armor: 2
+size: 2
+research: suffering-wall
+category: defense
+researchCostMultiplier: 0.75
+requirements: [
+    nullyte/16
+    suffering-metal/8
+]

@@ -1,0 +1,1 @@
+const prospectSpawn = extend(PowerTurret, "prospect-spawn", {});

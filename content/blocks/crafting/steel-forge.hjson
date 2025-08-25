@@ -1,0 +1,103 @@
+size: 3
+itemCapacity: 12
+craftTime: 150
+consumes: {
+  items:[
+    nullyte/2
+    suffelin/3
+  ]
+}
+outputItems: [
+  suffering-metal/1
+]
+craftEffect: [
+    {
+        type: ParticleEffect
+        particles: 12
+        cone: 360
+        lifetime: 50
+        length: 35
+        sizeFrom: 4
+        colorFrom: 393675
+        colorTo: ac85b100
+    }
+    {
+        type: RadialEffect
+        rotationSpacing: 180
+        lengthOffset: 0
+        amount: 2
+        effect: {
+            type: ParticleEffect
+            particles: 16
+            cone: 35
+            line: true
+            lifetime: 55
+            length: 65
+            interp: pow2Out
+            lenFrom: 6
+            lenTo: 0
+            strokeFrom: 2
+            strokeTo: 0
+            colorFrom: 56548f
+            colorTo: 210a4100
+        }
+    }
+    
+]
+drawer: {
+   type: DrawMulti
+    drawers: [
+    {
+    type: DrawRegion
+    suffix: -bottom
+    }
+    {
+    type: DrawRegion
+    suffix: -gear
+    spinSprite: true
+    rotateSpeed: 3
+    y: 6.5
+    }
+    {
+    type: DrawRegion
+    suffix: -gear
+    spinSprite: true
+    rotateSpeed: 3
+    y: -6.5
+    }
+    {
+    type: DrawRegion
+    suffix: -gear
+    spinSprite: true
+    rotateSpeed: -3
+    x: 6.5
+    }
+    {
+    type: DrawRegion
+    suffix: -gear
+    spinSprite: true
+    rotateSpeed: -3
+    x: -6.5
+    }
+    {
+    type: DrawDefault
+    }
+  ]
+}
+researchCostMultiplier: 0.2
+category: crafting
+requirements: [
+  demisite/210
+  suffelin/175
+  nullyte/110
+  zero-alloy/85
+]
+research: {
+    parent: alloy-cutter
+    objectives: [
+        {
+            type: OnSector
+            preset: endure
+        }
+    ]
+}

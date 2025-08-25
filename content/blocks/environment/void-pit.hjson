@@ -1,0 +1,4 @@
+variants: 0
+isLiquid: true
+drownTime: 10
+status: fading

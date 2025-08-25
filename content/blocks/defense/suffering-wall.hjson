@@ -1,0 +1,9 @@
+health: 420
+armor: 2
+research: nullyte-wall
+category: defense
+researchCostMultiplier: 0.75
+requirements: [
+    nullyte/4
+    suffering-metal/2
+]

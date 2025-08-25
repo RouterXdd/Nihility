@@ -1,0 +1,46 @@
+size: 3
+hardnessDrillMultiplier: 0
+category: production
+researchCostMultiplier: 0.35
+research: {
+    parent: demisite-mining-site
+    objectives: [
+        {
+            type: SectorComplete
+            preset: nowhere
+        }
+    ]
+}
+liquidBoostIntensity: 1
+drillTime: 245
+hasLiquids: false
+tier: 2
+shake: 3.6
+arrows: 1
+arrowSpacing: 0
+arrowOffset: 0
+itemCapacity: 30
+baseArrowColor: 190e1a
+consumes: {
+  liquids:[
+    blood/2.5
+  ]
+}
+drillEffect: [
+{
+       type: WaveEffect
+       lifetime: 35
+       sizeFrom: 0
+       sizeTo: 26
+       strokeFrom: 6
+       strokeTo: 0
+       colorFrom: 671d20
+       colorTo: 00000000
+}
+drillSteam
+]
+requirements: [
+  demisite/120
+  bloodinum/90
+  nullyte/75
+]

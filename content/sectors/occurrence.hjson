@@ -1,0 +1,13 @@
+planet: void-pl
+sector: 166
+difficulty: 3
+captureWave: 15
+research: {
+    parent: nowhere
+    objectives: [
+        {
+            type: SectorComplete
+            preset: nowhere
+        }
+    ]
+}

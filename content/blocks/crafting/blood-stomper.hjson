@@ -1,0 +1,69 @@
+size: 3
+liquidCapacity: 1500
+craftTime: 40
+consumes: {
+  items:[
+    bloodinum/3
+  ]
+}
+outputLiquids: [
+  blood/7.5
+]
+craftEffect: [
+    {
+        type: ParticleEffect
+        particles: 10
+        cone: 360
+        line: true
+        lifetime: 25
+        length: 60
+        lenFrom: 6
+        lenTo: 0
+        strokeFrom: 2
+        strokeTo: 0
+        colorFrom: 671d20
+        colorTo: 32071900
+    }
+    {
+       type: WaveEffect
+       lifetime: 25
+       sizeFrom: 0
+       sizeTo: 60
+       strokeFrom: 3.5
+       strokeTo: 0
+       colorFrom: 671d20
+       colorTo: 00000000
+    }
+]
+drawer: {
+   type: DrawMulti
+    drawers: [
+    {
+    type: DrawRegion
+    suffix: -bottom
+    }
+    {
+    type: DrawLiquidTile
+    drawLiquid: blood
+    }
+    {
+    type: DrawDefault
+    }
+  ]
+}
+category: crafting
+requirements: [
+  demisite/120
+  bloodinum/85
+  nullyte/45
+]
+researchCostMultiplier: 0.1
+research: {
+    parent: nuller
+    objectives: [
+        {
+            type: OnSector
+            preset: occurrence
+        }
+    ]
+}

@@ -1,0 +1,25 @@
+speedMultiplier: 0.85
+healthMultiplier: 0.8
+damage: 0.25
+color : c72f35
+
+effect : {
+    
+    type : MultiEffect
+    
+    effects : [
+        {
+            particles : 2
+            colorFrom : c72f35
+            line: true
+            lifetime: 25
+            lenFrom: 3
+            lenTo: 0
+            strokeFrom: 1.25
+            strokeTo: 0
+            colorTo : 7d051700
+            length : 8
+            type : ParticleEffect
+            cone : 360
+        }]
+}

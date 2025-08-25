@@ -1,0 +1,32 @@
+size: 2
+hardnessDrillMultiplier: 0
+category: production
+research: bloodinum-mining-site
+drillTime: 170
+hasLiquids: false
+tier: 1
+shake: 2.5
+arrows: 1
+arrowSpacing: 0
+arrowOffset: 0
+itemCapacity: 20
+researchCostMultiplier: 0.2
+blockedItem: bloodinum
+baseArrowColor: 190e1a
+liquidBoostIntensity: 1
+drillEffect: [
+{
+       type: WaveEffect
+       lifetime: 35
+       sizeFrom: 0
+       sizeTo: 26
+       strokeFrom: 6
+       strokeTo: 0
+       colorFrom: c2b964
+       colorTo: 00000000
+}
+]
+requirements: [
+  demisite/35
+  bloodinum/10
+]

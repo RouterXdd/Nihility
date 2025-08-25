@@ -1,0 +1,105 @@
+health: 755
+size: 2
+reload: 28
+range: 185
+outlineColor: "080409"
+shootY: 0
+ammoTypes:{
+    bloodinum:{
+        speed: 5
+        lifetime: 37
+        damage: 15
+        width: 8
+        height: 12
+        backColor: 451225 
+        frontColor: 631f2e
+        trailColor: 451225 
+        trailWidth: 1.5
+        trailLength: 7
+        ammoMultiplier: 2
+        buildingDamageMultiplier: 0.2
+        status: bloodshred
+        statusDuration: 40
+        despawnHit: false
+        hitEffect: [
+            {
+                type: ParticleEffect 
+                colorFrom: 320719
+                colorTo: 00000000
+                particles: 15
+                cone: 360
+                length: 30
+                baseLength: 0
+                lightScl: 3
+                lightOpacity: 2
+                lifetime: 25
+                spin: 0
+                sizeFrom: 1.5
+                sizeTo: 0 
+                offset: 0
+            }
+            {
+                type: ParticleEffect 
+                colorFrom: 671d20
+                colorTo: 00000000
+                particles: 8
+                cone: 50
+                length: 60
+                baseLength: 0
+                lightScl: 3
+                lightOpacity: 2
+                lifetime: 30
+                spin: 0
+                sizeFrom: 2
+                sizeTo: 0 
+                offset: 0
+            }
+        ]
+        despawnEffect: [
+            {
+                type: ParticleEffect 
+                colorFrom: 320719
+                colorTo: 00000000
+                particles: 15
+                cone: 360
+                length: 30
+                baseLength: 0
+                lightScl: 3
+                lightOpacity: 2
+                lifetime: 25
+                spin: 0
+                sizeFrom: 1.5
+                sizeTo: 0 
+                offset: 0
+            }
+            {
+                type: ParticleEffect 
+                colorFrom: 671d20
+                colorTo: 00000000
+                particles: 8
+                cone: 50
+                length: 60
+                baseLength: 0
+                lightScl: 3
+                lightOpacity: 2
+                lifetime: 30
+                spin: 0
+                sizeFrom: 2
+                sizeTo: 0 
+                offset: 0
+            }
+        ]
+    }
+}
+drawer:{
+ type: DrawTurret
+ basePrefix: souled-
+}
+category: turret
+research: slump
+researchCostMultiplier: 0.25
+requirements: [
+    bloodinum/230
+    nullyte/165
+    zero-alloy/100
+]

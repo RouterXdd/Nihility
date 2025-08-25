@@ -1,0 +1,10 @@
+slump (early game, item, 2x2):
+    suffelin - splash damage with knockback
+    zero alloy - higher splash damage with negative knockback
+revolt (early game, item, 2x2):
+    bloodinum - single damage, that slows enemy
+buster (mid game, item, 3x3):
+    nulllyte - rudeBuster (Homing bullet with splash damage)
+    suffering metal - redBuster (Homing bullet with larger splash range and higher damage)
+snowgrave (late game, power, 4x4):
+    charges and shoot helix burst of pirecing ice bullets

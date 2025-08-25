@@ -1,0 +1,124 @@
+type: flying
+lowAltitude: true
+controller: RepairAI
+defaultCommand: repair
+speed: 1.55
+accel: 0.09
+drag: 0.075
+flying: true
+health: 360
+hitSize: 12
+armor: 30
+itemCapacity: 10
+outlineColor: 080409
+engineOffset: 2
+faceTarget: true
+weapons: [
+{
+name: prospect-weapon
+x: 0
+y: 3.5
+mirror: false
+top: false
+layerOffset: -0.00001
+rotate: true
+rotateSpeed: 2
+rotationLimit: 35
+shootCone: 20
+reload: 160
+shootStatus: powerout
+shootStatusDuration: 200
+continuous: ture
+recoil: 2
+    shootSound: laser
+    bullet: {
+        type: LaserBulletType
+        lifetime: 30
+        healAmount: 75
+        collidesTeam: true
+        collides: true
+        damage: 20
+        length: 100
+        width: 6
+        hitSize: 4
+        colors: [320719, 48111b, 671d20]
+        healColor: 671d20
+        collidesAir: true
+        collidesGround: true
+        buildingDamageMultiplier: 0.01
+        despawnEffect: none
+        hitEffect: [
+        {
+            type: ParticleEffect
+            particles: 3
+            lifetime: 20
+            length: 10
+            sizeFrom: 5
+            sizeTo: 0
+            colorFrom: 671d20
+            colorTo: 32071900
+            strokeFrom: 3
+            strokeTo: 1
+        }
+      ]
+    shootEffect: {
+        type: MultiEffect
+        effects: [
+            {
+                type: WaveEffect
+                colorFrom: 671d20
+                colorTo: 32071900
+                sizeFrom: 0
+                sizeTo: 20
+                strokeFrom: 2
+                strokeTo: 0
+                lifetime: 22
+            }
+            {
+                type: ParticleEffect
+                particles: 5
+                cone: 45
+                line: true
+                lifetime: 34
+                length: 40
+                lenFrom: 3.5
+                lenTo: 0
+                strokeFrom: 1
+                strokeTo: 0
+                colorFrom: 671d20
+                colorTo: 32071900
+            }
+            {
+              type: ParticleEffect
+              particles: 1
+              lifetime: 45
+              length: 0
+              sizeFrom: 6
+              sizeTo: 0
+              colorFrom: 671d20
+              colorTo: 32071900
+              interp: pow3Out
+              spin: 5
+              sizeInterp: pow3In
+              region: nihil-star
+            }
+        ]
+    }
+    }
+}
+ ] 
+research: {
+    parent: core-justice
+    requirements: [
+        bloodinum/800
+        nullyte/550
+        suffelin/380
+    ]
+    objectives: [
+        zero-alloy
+        {
+            type: SectorComplete
+            preset: occurrence
+        }
+    ]
+}

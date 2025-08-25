@@ -1,0 +1,43 @@
+health: 360
+armor: 30
+reload: 200
+size: 2
+shootY: 0
+range: 0
+rotateSpeed: 0
+alwaysShooting: true
+outlineRadius: 0
+connectedPower: false
+createRubble: false
+drawCracks: false
+destroyEffect: none
+destroySound: none
+shootSound: none
+consumes: {
+  liquids:[
+    blood/3
+  ]
+}
+shootType:{
+    speed: 0
+    lifetime: 0
+    damage: 0
+    width: 0
+    height: 0
+    ammoMultiplier: 1
+    killShooter: true
+    despawnUnit: prospect
+    
+    smokeEffect: none
+    shootEffect: none
+    despawnEffect:none
+}
+category: units
+research: prospect
+researchCostMultiplier: 0
+requirements: [
+    bloodinum/200
+    nullyte/160
+    suffelin/100
+    zero-alloy/30
+]

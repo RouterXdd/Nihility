@@ -1,0 +1,117 @@
+type: legs
+outlineColor: 080409
+speed: 0
+flying: false
+research: core-justice
+hovering: true
+hitSize: 10
+drawBody: false
+drawCell: false
+itemCapacity: 10
+targetAir: true
+targetGround: true
+legCount: 0
+lockLegBase: true
+legExtension: -2.3
+stepShake: 0
+rotateSpeed: 4
+health: 2000
+armor: 10
+physics: false
+bounded: false
+useUnitCap: false
+buildSpeed: 1
+buildRange: 500
+mineSpeed: 5
+mineRange: 500
+mineTier: 1
+fogRadius: 63
+parts: [
+    {
+        type: ShapePart
+        circle: true
+        hollow: true
+        radius: 500
+        layer: 122
+        stroke: 4.5
+        color: fbf51c7a
+    }
+]
+weapons: [
+    {
+    name: clover-tur
+    x: 0
+    y: 0
+    mirror: false
+    recoil: 1.5
+    reload: 32
+    shootSound: shootAlt
+    rotate: true
+    rotateSpeed: 8
+    shootCone: 20
+    inaccuracy: 0
+    ignoreRotation:true
+
+    bullet: {
+        type: BasicBulletType
+        damage: 40
+        lifetime: 83.3333333333
+        width: 7
+        height: 12
+        speed: 6
+        backColor: a4a000 
+        frontColor: fbf51c
+        trailColor: a4a000 
+        trailWidth: 1.75
+        trailLength: 8
+
+        shootEffect: {
+            type: ParticleEffect 
+            colorFrom: a4a000
+            colorTo: 00000000
+            particles: 10
+            cone: 15
+            length: 28
+            baseLength: 0
+            lightScl: 3
+            lightOpacity: 2
+            spin: 0
+            sizeFrom: 1.5
+            sizeTo: 0 
+        }
+        smokeEffect: none
+        despawnEffect:{
+            type: ParticleEffect 
+            colorFrom: a4a000
+            colorTo: 00000000
+            particles: 15
+            cone: 360
+            length: 30
+            baseLength: 0
+            lightScl: 3
+            lightOpacity: 2
+            lifetime: 55
+            spin: 0
+            sizeFrom: 2.5
+            sizeTo: 0 
+            offset: 0
+        }
+        hitEffect:{
+            type: ParticleEffect 
+            colorFrom: a4a000
+            colorTo: 00000000
+            particles: 15
+            cone: 360
+            length: 30
+            baseLength: 0
+            lightScl: 3
+            lightOpacity: 2
+            lifetime: 55
+            spin: 0
+            sizeFrom: 2.5
+            sizeTo: 0 
+            offset: 0
+        }
+    }
+    }
+]

@@ -1,0 +1,24 @@
+speedMultiplier: 0
+reloadMultiplier: 0
+color : b6b6b6
+
+effect : {
+    
+    type : MultiEffect
+    
+    effects : [
+        {
+            particles : 1
+            colorFrom : b6b6b6
+            line: true
+            lifetime: 20
+            lenFrom: 2.5
+            lenTo: 0
+            strokeFrom: 1.25
+            strokeTo: 0
+            colorTo : 82828200
+            length : 1
+            type : ParticleEffect
+            cone : 360
+        }]
+}

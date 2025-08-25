@@ -1,0 +1,9 @@
+health: 350
+research: core-justice
+category: defense
+requirements: [
+    nullyte/8
+]
+researchCost: [
+	nullyte/80
+]

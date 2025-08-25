@@ -1,0 +1,106 @@
+type: flying
+lowAltitude: false
+speed: 21
+accel: 0.015
+drag: 0.08
+flying: true
+health: 340
+hitSize: 15
+armor: 10
+itemCapacity: 10
+outlineColor: 232323
+engineOffset: 6
+engineSize: 3.5
+circleTarget: true
+weapons: [
+{
+name: plane-weapon
+x: 0
+y: 0
+mirror: false
+top: false
+layerOffset: -0.00001
+rotate: false
+shootCone: 20
+reload: 115
+shoot: {
+    shots: 3
+    shotDelay: 4
+}
+    shootSound: bang
+    bullet: {
+        type: BasicBulletType
+        damage: 15
+        lifetime: 10
+        width: 7
+        height: 14
+        speed: 8
+        backColor: 565656 
+        frontColor: 979797
+        trailColor: 565656 
+        trailWidth: 1.75
+        trailLength: 10
+        despawnHit: true
+        shootEffect: [
+            {
+                type: ParticleEffect 
+                colorFrom: 979797
+                colorTo: 00000000
+                particles: 5
+                cone: 30
+                length: 25
+                baseLength: 0
+                lightScl: 2
+                lightOpacity: 1
+                lifetime: 20
+                spin: 0
+                sizeFrom: 2
+                sizeTo: 0 
+                offset: 0
+            }
+            {
+                type: ParticleEffect 
+                colorFrom: 273145
+                colorTo: 00000000
+                particles: 6
+                cone: 360
+                length: 32
+                baseLength: 0
+                lightScl: 1.2
+                lightOpacity: 1
+                lifetime: 25
+                spin: 0
+                sizeFrom: 1.2
+                sizeTo: 0 
+                offset: 0
+            }
+        ]
+        hitEffect: none
+        despawnEffect:{
+            type: ParticleEffect 
+            colorFrom: 979797
+            colorTo: 00000000
+            particles: 8
+            cone: 50
+            length: 45
+            baseLength: 0
+            lightScl: 3
+            lightOpacity: 2
+            lifetime: 30
+            spin: 0
+            sizeFrom: 2
+            sizeTo: 0 
+            offset: 0
+        }
+    }
+}
+] 
+research: {
+    parent: blaster
+    objectives: [
+        {
+            type: SectorComplete
+            preset: occurrence
+        }
+    ]
+}

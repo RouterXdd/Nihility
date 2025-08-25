@@ -1,0 +1,38 @@
+Units (windingers):
+ground (direct tiers):
+    symbol - символ +
+    letter - буква +
+    word - слово
+    sentence - предложение
+    text - текст
+    (non tier):
+    bomb - бомба +
+    hand - рука +
+    flag - флаг
+    flag mk2 - флаг М2
+air (direct tiers):
+    
+    (non tier):
+    blaster - бластер +
+    plane - самолёт +
+    drop - капля
+    gaster (For sectors)
+bosses:
+    (canon):
+    route - путь
+    genocide - геноцид
+    reset - перезапуск (Will have 2 phases (And joke of "diying is gay"))
+    (non canon):
+    true zenith
+
+Units (faded):
+ground:
+    recharge - перезаряд
+air:
+
+
+Units (soulings):
+ground (non tiers):
+    glaive - глефа
+air (non tiers):
+    prospect - перспектива

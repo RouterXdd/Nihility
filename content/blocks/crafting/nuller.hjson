@@ -1,0 +1,50 @@
+size: 2
+itemCapacity: 10
+craftTime: 75
+consumes: {
+  items:[
+    demisite/2
+  ]
+}
+outputItems: [
+  nullyte/1
+]
+craftEffect: [
+  {
+    type: RadialEffect
+    rotationSpacing: 90
+    lengthOffset: 2.25
+    effect: {
+        type: ParticleEffect
+        particles: 8
+        cone: 20
+        line: true
+        lifetime: 40
+        length: 42
+        lenFrom: 5
+        lenTo: 0
+        strokeFrom: 1.5
+        strokeTo: 0
+        colorFrom: a49b48
+        colorTo: 2b151b00
+    }
+  }
+]
+drawer: {
+   type: DrawMulti
+    drawers: [
+    {
+    type: DrawDefault
+    }
+    {
+    type: DrawFade
+     }
+  ]
+}
+researchCostMultiplier: 0.25
+category: crafting
+requirements: [
+  demisite/75
+  bloodinum/50
+]
+research: core-justice

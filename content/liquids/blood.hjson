@@ -1,0 +1,9 @@
+temperature: 0.1
+viscosity: 0.75
+
+color: 48111b
+
+research: {
+parent: core-justice
+objectives: [blood]
+}

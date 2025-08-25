@@ -1,0 +1,6 @@
+planet: void-pl
+sector: 14
+difficulty: 1
+captureWave: 5
+research: core-justice
+alwaysUnlocked: true

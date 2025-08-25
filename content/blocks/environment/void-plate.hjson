@@ -1,0 +1,24 @@
+variants: 0
+
+blendGroup: void
+parent: void
+allowCorePlacement: true
+effectSpacing: 50
+effect: {
+	type: MultiEffect
+	effects: [
+		{
+			type: ParticleEffect
+			lifetime: 40
+			region: nihil-void-plate
+			particles: 1
+			colorTo: 00000000
+			sizeFrom: 10
+			sizeTo: 20
+			interp: pow4In
+			sizeInterp: pow5Out
+			length: 0
+			baseLength: 0
+		}
+	]
+}

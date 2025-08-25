@@ -1,0 +1,138 @@
+health: 430
+size: 2
+reload: 45
+range: 140
+outlineColor: "080409"
+ammoTypes:{
+    suffelin:{
+        speed: 6
+        lifetime: 23.333333333
+        splashDamage: 30
+        splashDamageRadius: 28
+        damage: 10
+        sprite: shell
+        width: 12
+        height: 12
+        backColor: 210a41 
+        frontColor: 292668
+        trailColor: 210a41 
+        trailWidth: 2
+        trailLength: 7
+        ammoMultiplier: 2
+        buildingDamageMultiplier: 0.2
+        despawnHit: false
+        fragBullets: 36
+        fragRandomSpread: 0
+        fragSpread: 10
+        fragLifeMin: 1
+        fragVelocityMin: 1
+        fragBullet:{
+            type: BulletType
+            damage: 0.00000000001
+            speed: 2.5
+            lifetime: 11.2
+            pierce: true
+            knockback: 2.5
+            despawnEffect: none
+            hitEffect: none
+        }
+        hitEffect: [
+            {
+                type: WaveEffect
+                colorFrom: 292668
+                colorTo: 210a4100
+                sizeFrom: 0
+                sizeTo: 28
+                strokeFrom: 4
+                strokeTo: 0
+                lifetime: 20
+                
+            }
+        ]
+        despawnEffect: [
+            {
+                type: WaveEffect
+                colorFrom: 292668
+                colorTo: 210a4100
+                sizeFrom: 0
+                sizeTo: 28
+                strokeFrom: 4
+                strokeTo: 0
+                lifetime: 20
+                
+            }
+        ]
+    }
+    zero-alloy:{
+        speed: 6
+        lifetime: 23.333333333
+        splashDamage: 40
+        splashDamageRadius: 28
+        damage: 30
+        sprite: shell
+        width: 12
+        height: 12
+        backColor: ac85b1 
+        frontColor: dcb3db
+        trailColor: ac85b1 
+        trailWidth: 2
+        trailLength: 7
+        ammoMultiplier: 2
+        buildingDamageMultiplier: 0.2
+        knockback: 30
+        despawnHit: false
+        fragBullets: 36
+        fragRandomSpread: 0
+        fragSpread: 10
+        fragLifeMin: 1
+        fragVelocityMin: 1
+        fragBullet:{
+            type: BulletType
+            damage: 0.00000000001
+            speed: 2.5
+            lifetime: 11.2
+            pierce: true
+            knockback: -1
+            despawnEffect: none
+            hitEffect: none
+        }
+        hitEffect: [
+            {
+                type: WaveEffect
+                colorFrom: dcb3db
+                colorTo: ac85b100
+                sizeFrom: 28
+                sizeTo: 0
+                strokeFrom: 4
+                strokeTo: 0
+                lifetime: 20
+                
+            }
+        ]
+        despawnEffect: [
+            {
+                type: WaveEffect
+                colorFrom: dcb3db
+                colorTo: ac85b100
+                sizeFrom: 28
+                sizeTo: 0
+                strokeFrom: 4
+                strokeTo: 0
+                lifetime: 20
+                
+            }
+        ]
+    }
+}
+drawer:{
+ type: DrawTurret
+ basePrefix: souled-
+}
+category: turret
+research: core-justice
+researchCostMultiplier: 0.2
+requirements: [
+    bloodinum/175
+    nullyte/130
+    suffelin/85
+]
